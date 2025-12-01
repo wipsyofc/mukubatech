@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #16476A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p, a {
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/************************************  NAVBAR  *********************************/
+
+#MukubaTechLogoImage {
+    width: 40px;
+    height: 40px;
+}
+#MukubaTechLogo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-weight: bold;
+}
+
+
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.49);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+
+/************************************  FOOTER  *********************************/
+footer{
+    background-color: rgba(123, 73, 44, 0.281);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+.sectionFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5px;
+}
+
+.sectionFooterDiv{
+    padding: 10px;
+    overflow: hidden;
+    width: 32%;
+}
+
+.sectionFooterDiv h3{
+    color: black;
+    font-weight: bold;    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div1 img{
+    width: 9rem;
+    height: 9rem;
+}
+
+.div3 ul li, a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(57, 189, 237);
+}
+
+.copyrigth{
+    width: 100%;
+    padding-block: 2px;
+    background-color: black;
+}

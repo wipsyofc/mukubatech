@@ -1,0 +1,58 @@
+section{
+    display: flex;
+    flex-direction: block;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    section {
+         flex-direction: column;
+    }
+}
+
+.divContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 5px;
+}
+
+form input, form textarea, button{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+} 
+
+form textarea{
+    height: 100px;
+    overflow: hidden;
+    resize: none;
+}
+
+#envoyer{
+    background-color: #58A0C8;
+    color: white;
+    cursor: pointer;
+}
+
+form input:hover, form textarea:hover, #envoyer:hover{
+    border: solid 2px #58A0C8;
+    background-color: #16476A;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+    border: solid 2px #58A0C8;
+    background-color: #16476A;
+}
