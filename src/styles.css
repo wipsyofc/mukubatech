@@ -62,18 +62,27 @@ footer{
 }
 
 
-.sectionFooter{
+.sectionFooter {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
     width: 100%;
     height: fit-content;
     padding-bottom: 5px;
+    justify-content: center;
 }
 
-.sectionFooterDiv{
+.sectionFooterEnfant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sectionFooterDiv {
     padding: 10px;
     overflow: hidden;
-    width: 32%;
+    flex: 1 1 300px;  
 }
 
 .sectionFooterDiv h3{
