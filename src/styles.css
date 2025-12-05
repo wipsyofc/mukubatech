@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-color: #16476A;
+    background-color: #00175b;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,46 +61,46 @@ footer{
     margin-top: auto;
 }
 
-
 .sectionFooter {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly; 
     gap: 1rem;
     width: 100%;
-    height: fit-content;
     padding-bottom: 5px;
-    justify-content: center;
-}
-
-.sectionFooterEnfant{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
 }
 
 .sectionFooterDiv {
+    flex: 0 1 300px; /* largeur contrôlée */
     padding: 10px;
     overflow: hidden;
-    flex: 1 1 300px;  
 }
 
-.sectionFooterDiv h3{
-    color: black;
-    font-weight: bold;    
+.sectionFooterDiv h3 {
+    color: #B3BFFF;
+    font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.div1 img{
+.div1 img {
     width: 9rem;
     height: 9rem;
 }
 
-.div3 ul li, a{
-    list-style: none;
-    text-decoration: none;
-    color: rgb(57, 189, 237);
+.div3 ul {
+    padding: 0;
+    margin: 0;
 }
+
+.div3 ul li {
+    list-style: none;
+}
+
+.div3 ul li a {
+    text-decoration: none;
+    color: #39bded;
+}
+
 
 .copyrigth{
     width: 100%;
