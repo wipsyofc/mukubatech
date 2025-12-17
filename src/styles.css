@@ -48,6 +48,19 @@ p, a {
 
 
 
+/************************* BOUTON REVENIR EN HAUT DE LA PAGE *********************/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  display: none; 
+  z-index: 99999;
+  border-radius: 50px;
+  background-color: #39bded;
+  border:#ffffff solid 2px;
+}
+
+
 /************************************  FOOTER  *********************************/
 footer{
     background-color: rgba(123, 73, 44, 0.281);

@@ -1,0 +1,176 @@
+section{
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+
+.titre{
+    color: #39E0FF;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.titre div{
+    width: 60px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #ffffff64;
+}
+
+.corp{
+    color: #FFFADC;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: justify;
+}   
+a{
+    color: #39E0FF;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*********************** Domaines d'expertise ***********************/
+.div-DomainesDexpertise ul li{
+    list-style-type: none;
+    color: #B3BFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.corp-DomainesDexpertise{
+    color: #FFFADC;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+/*********************** EQUIPE ***********************/
+
+.divLesMembresDeLequipe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.membre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.membre img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-color: rgb(203, 203, 203);
+}
+.membre h3{
+    color: #B3BFFF;
+    margin-bottom: 5px;
+}
+
+.membre p{
+    color: #FFFADC;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+/********************* FIN EQUIPE *********************/
+
+
+
+
+
+/***************** Discutons de votre projet *****************/
+
+
+/**** BOUTON CONTACTER ****/ 
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  margin: 50px 0 50px 20px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+.button:hover .icon {
+  transform: translate(4px);
+}
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+/***** FIN BOUTON CONTACTER ****/
+
+/***************** Fin Discutons de votre projet *****************/
