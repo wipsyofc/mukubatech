@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from './header/header.component';
 
@@ -14,4 +14,13 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'MukubaTech';
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Force le scroll en haut
+        window.scrollTo(0, 0);
+      }
+    });
+  }
 }

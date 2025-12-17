@@ -15,7 +15,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" (click)="closeNavbarOnClick($event)" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">  
           <a class="nav-link" routerLink="/accueil" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
           <a class="nav-link" routerLink="/apropos" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Qui sommes nous</a>

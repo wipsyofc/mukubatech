@@ -41,6 +41,7 @@
 .divContact{
     display: block;
     text-align: center;
+    padding-top: 20px;
 }
 
 .divContact h2{
